@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.header__content {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left,
+.header__right,
+.header__form,
+.logo,
+.items_browse {
+        display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #222222;
+font-size: 27px;
+font-weight: 300;
+text-transform: uppercase;
+    margin-right: 37px;
+}
+
+.logo__img {
+    margin-right: 13px;
+}
+
+.cart {
+    margin-right: 26px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__link {
+    display: block;
+    padding: 20px;
+    color: #222222;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.promo {
+    background-color: #e8e8e8;
+}
+
+.promo__container {
+    height: 613px;
+    background-image: url(img/promo_img.jpg);
+    background-position: 0 -51px;
+    padding-top: 224px;
+    box-sizing: border-box;
+}
+
+.spacer {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.offer {
+    margin: 100px 0;
+}
+
+.offer__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer__box_square {
+    width: 560px;
+    height: 542px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer__box_rectangular {
+    width: 560px;
+    height: 261px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer__text-box {
+    background: #ffffff;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding: 20px 15px;
+    text-transform: uppercase;
+}
+
+.offer__text {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.offer__text_header {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.f__items__list{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 79px;
+}
+
+.product-item {
+  width: 263px;
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 123px;
+}
+
+.product-item img{
+width: 100%;
+}
+
+.product-item-img{
+  width: 261px;
+height: 279px;
+  overflow: hidden;
+}
+
+.product__name{
+  padding-top: 20px;
+  padding-bottom: 17px;
+ font-family: Lato;
+ font-size: 20px;
+ font-weight: normal;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: #222222;
+}
+
+
+.product__price {
+  font-size: 16px;
+  color: #fc5a5a;
+  display: block;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.product-list{
+  padding: 20px;
+}
+
+.items_browse{
+  justify-content: center;
+}
+
+
+.f__items h4{
+ font-family: Lato;
+ font-size: 14px;
+ font-weight: normal;
+ font-style: normal;
+ font-stretch: normal;
+ letter-spacing: 0.35px;
+ text-align: center;
+ color: #9f9f9f;
+
+}
+
+.f__items h1{
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.75px;
+  text-align: center;
+  color: #222222;
+  padding-bottom: 16px;
+}
