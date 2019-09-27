@@ -354,6 +354,7 @@ height: 279px;
 
 .footer-table {
     padding-top: 123px;
+    padding-bottom: 89px;
 }
 
 .footer-table .tab-name {
@@ -424,15 +425,15 @@ height: 279px;
 }
 
 .comments_container {
-    background-image: url(img/Subscribe.jpg);
-    box-sizing: border-box;
     height: 438px;
     display: flex;
     justify-content: space-between;
 }
 
 .comments {
-    padding-top: 97px;
+   margin-top: 97px;
+    background-image: url(img/Subscribe.jpg);
+    background-size: cover;
 }
 
 
@@ -507,16 +508,13 @@ align-items: center;
 }
 
 .comments_input {
-        width: 334px;
+    width:100%;
   height: 46px;
   border-radius: 23px;
   background-color: #e1e1e1;
-    margin: 0 -25px;
 }
 
 .comments_form {
-  width: 106px;
-  height: 10px;
   opacity: 0.67;
   font-family: Lato;
   font-size: 14px;
@@ -526,7 +524,7 @@ align-items: center;
   line-height: 3.86;
   letter-spacing: 0.35px;
   color: rgba(34, 34, 36, 0.67);
-    position: absolute;
+position: relative;
 }
 
 
@@ -547,7 +545,69 @@ align-items: center;
     line-height: 46px;
     border: 2px solid transparent;
     top: 0;
-    right: -225px;
+    right: 0;
     position: absolute;
     
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_social {
+  height: 79px;
+  background-color: #e6e6e6;
+}
+
+
+
+.social_rights {
+    display: flex;
+    align-items: center;
+    padding-top: 33px;
+}
+
+.social_media {
+    display: flex;
+   align-items: center;
+    padding-top: 24px;
+    
+}
+
+.social_rights_text {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.63;
+  letter-spacing: 0.4px;
+  text-align: right;
+  color: #7a7a7a;
+}
+
+.social_icon {
+     width: 32px;
+  height: 32px;
+    margin: 0 4px;
+}
+
+.social_icon:hover {
+    background-color: #f16d7f;
+    border-radius: 5px;
+}
+.comments_box {
+    display: flex;
+}
+
+
+
+.comments_left_img img {
+    border-radius: 50px;
+    
+}
+
+.comments_left_text {
+        padding: 0 15px;
 }
