@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.header__content {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left,
+.header__right,
+.header__form,
+.logo,
+.items_browse {
+        display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #222222;
+font-size: 27px;
+font-weight: 300;
+text-transform: uppercase;
+    margin-right: 37px;
+}
+
+.logo__img {
+    margin-right: 13px;
+}
+
+.cart {
+    margin-right: 26px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__link {
+    display: block;
+    padding: 20px;
+    color: #222222;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.promo {
+    background-color: #e8e8e8;
+}
+
+.promo__container {
+    height: 613px;
+    background-image: url(img/promo_img.jpg);
+    background-position: 0 -51px;
+    padding-top: 224px;
+    box-sizing: border-box;
+}
+
+.promo__h2{
+  font-family: Lato;
+  font-size: 60px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #222222;
+}
+
+.pink{
+  color: #f16d7f;
+}
+
+.promo__h3{
+  font-family: Lato;
+ font-size: 40px;
+ font-weight: 900;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: normal;
+ letter-spacing: 1px;
+ color: #222222;
+}
+
+.spacer {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.offer {
+    margin: 100px 0;
+}
+
+.offer__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer__box_square {
+    width: 560px;
+    height: 542px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer__box_rectangular {
+    width: 560px;
+    height: 261px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer__text-box {
+    background: #ffffff;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding: 20px 15px;
+    text-transform: uppercase;
+}
+
+.offer__text {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.offer__text_header {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.f__items__list{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 79px;
+}
+
+.product-item {
+  width: 263px;
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 123px;
+}
+
+.product-item img{
+width: 100%;
+}
+
+.product-item-img{
+  width: 261px;
+height: 279px;
+  overflow: hidden;
+}
+
+.product__name{
+  padding-top: 20px;
+  padding-bottom: 17px;
+ font-family: Lato;
+ font-size: 20px;
+ font-weight: normal;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: #222222;
+}
+
+
+.product__price {
+  font-size: 16px;
+  color: #fc5a5a;
+  display: block;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.product-list{
+  padding: 20px;
+}
+
+.items_browse{
+  justify-content: center;
+}
+
+
+.f__items h4{
+ font-family: Lato;
+ font-size: 14px;
+ font-weight: normal;
+ font-style: normal;
+ font-stretch: normal;
+ letter-spacing: 0.35px;
+ text-align: center;
+ color: #9f9f9f;
+
+}
+
+.f__items h1{
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.75px;
+  text-align: center;
+  color: #222222;
+  padding-bottom: 16px;
+}
+
+.header_input {
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    width: 317px;
+    height: 38px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    letter-spacing: 0.35px;
+}
+
+.product-item:hover .product__add {
+    display: block;
+}
+
+.product-item:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-item:hover .product-item-img {
+    filter: brightness(50%);
+}
+
+.product__add {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    width: 123px;
+    height: 39px;
+    line-height: 39px;
+    display: none;
+    border: 1px solid #ffffff;
+    position: absolute;
+    top: 98px;
+    left: 70px;
+    text-align: center;
+}
+
+.product__add:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+
+
+
+
+.end_offer_right {
+    width: 373px;
+  height: 529px;
+  background-color: #222224;   
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.end_offer_left {
+       height: 529px;
+    width: 767px;
+    background-image: url(img/Layer_38.jpg);
+    overflow: hidden;
+}
+
+.end_offer_container {
+     display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+.end_offer_text {
+    padding-top: 146px;
+    padding-left: 39px;
+    font-family: Lato;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+    font-size: 32px;
+    
+}
+
+
+   
+
+.end_offer {
+    padding-top: 113px;
+}
+
+.end_offer_right_text {
+    width: 219px;
+  height: 58px;
+}
+
+
+
+.footer-table {
+    padding-top: 123px;
+}
+
+.footer-table .tab-name {
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.footer-table .tab-thin {
+    height: 180px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.35px;
+  color: #898989;
+    padding-right: 64px;
+}
+
+.footer-table .tab-bold {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+
+
+.end_offer_right_img {
+       margin-left: 20px;
+    position: absolute;
+    left:-100px;
+}
+
+.end_offer_box {
+    margin: 55px 111px;
+    position: relative;
+}
+
+.end_offer_big_text {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #fbfbfb;
+}
+
+.end_offer_small_text {
+      width: 219px;
+  height: 58px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: #fbfbfb;
+}
+
+.comments_container {
+    background-image: url(img/Subscribe.jpg);
+    box-sizing: border-box;
+    width: 1600px;
+    height: 438px;
+    position: relative;
+    display: flex;
+    justify-content: space-between
+}
+
+.comments {
+    padding-top: 97px;
+}
+
+
+
+
+
+.comments_left_img {
+    position: absolute;
+    top:111px;
+    left: 231px;
+}
+
+.comments_left_text {
+    padding-left: 342px;
+    padding-top: 123px;
+
+}
+
+.comments_speech {
+          width: 386px;
+  height: 68px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #222224;
+}
+
+.comments_name {
+          width: 386px;
+  height: 68px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #222224;
+    margin-top: 19px;
+}
+
+.comments_right {
+          display: flex;
+    padding-right: 385px;
+    padding-top: 148px;
+    
+}
+
+.comments_left {
+    width:804px;
+}
+
+.subscribe {
+     width: 277px;
+  height: 41px;
+  font-family: Lato;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: 0.35px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe_desc {
+      font-size: 14px;
+  line-height: 2.25;
+  letter-spacing: 0.6px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.comments_input {
+        width: 334px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #e1e1e1;
+        padding-left: 28px;
+}
+
+.comments_form {
+  width: 106px;
+  height: 10px;
+  opacity: 0.67;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.86;
+  letter-spacing: 0.35px;
+  color: rgba(34, 34, 36, 0.67);
+    position: relative;
+
+}
+
+.comments_subscribe {
+    padding-bottom: 35px;
+}
+
+
+
