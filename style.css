@@ -426,11 +426,9 @@ height: 279px;
 .comments_container {
     background-image: url(img/Subscribe.jpg);
     box-sizing: border-box;
-    width: 1600px;
     height: 438px;
-    position: relative;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .comments {
@@ -441,17 +439,9 @@ height: 279px;
 
 
 
-.comments_left_img {
-    position: absolute;
-    top:111px;
-    left: 231px;
-}
 
-.comments_left_text {
-    padding-left: 342px;
-    padding-top: 123px;
 
-}
+
 
 .comments_speech {
           width: 386px;
@@ -482,14 +472,18 @@ height: 279px;
 }
 
 .comments_right {
-          display: flex;
-    padding-right: 385px;
-    padding-top: 148px;
+    display: flex;
+justify-content: center;
+align-items: center;
+    flex: 1;
     
 }
 
 .comments_left {
-    width:804px;
+    display: flex;
+justify-content: center;
+align-items: center;
+    flex: 1;
 }
 
 .subscribe {
@@ -510,7 +504,6 @@ height: 279px;
   line-height: 2.25;
   letter-spacing: 0.6px;
     text-align: center;
-    padding-bottom: 35px;
 }
 
 .comments_input {
@@ -518,7 +511,7 @@ height: 279px;
   height: 46px;
   border-radius: 23px;
   background-color: #e1e1e1;
-        padding-left: 28px;
+    margin: 0 -25px;
 }
 
 .comments_form {
@@ -533,13 +526,28 @@ height: 279px;
   line-height: 3.86;
   letter-spacing: 0.35px;
   color: rgba(34, 34, 36, 0.67);
-    position: relative;
-
-}
-
-.comments_subscribe {
-    padding-bottom: 35px;
+    position: absolute;
 }
 
 
 
+
+
+
+
+
+.comments_button {
+  height: 46px;
+  border-radius:0 25px 25px 0;
+    box-sizing: border-box;
+  background: #ff0023;
+    margin-top:3px;
+    color: #ffffff;
+    padding: 0px 20px;
+    line-height: 46px;
+    border: 2px solid transparent;
+    top: 0;
+    right: -225px;
+    position: absolute;
+    
+}
