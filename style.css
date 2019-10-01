@@ -729,7 +729,6 @@ letter-spacing: 0.35px;
 }
 
 .big_menu_link:hover {
-    font-weight: bold;
   color: #f16d7f;
       font-size: 14px;
 }
@@ -778,7 +777,7 @@ margin-top: -85px;
   letter-spacing: normal;
   text-align: center;
   color: #f16d7f;
-    padding-bottom: 34px;
+    padding-bottom: 15px;
     padding-top: 73px;
 }
 
@@ -795,6 +794,7 @@ margin-top: -85px;
   text-align: center;
   color: #4d4d4d;
     padding-bottom: 67px;
+    padding-top: 18px;
 }
 
 .product_box_text {
@@ -906,6 +906,15 @@ background: url(img/cart.svg) no-repeat 40% 50%;
   height: 35px;
   border: solid 1px #eaeaea;
   background-color: #ffffff;
+      font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: center;
+  color: #bcbcbc;
 }
 
 .choose_color {
@@ -930,6 +939,10 @@ background: url(img/cart.svg) no-repeat 40% 50%;
   color: #2f2f2f;
 }
 
+.choose_head p{
+    padding-bottom: 16px;
+}
+
 .also_like {
     padding-top:119px;
   font-family: Lato;
@@ -942,3 +955,23 @@ background: url(img/cart.svg) no-repeat 40% 50%;
   text-align: center;
   color: #4d4d4d;
 }
+
+.castom-border {
+    display: flex;
+    width: 147px;
+}
+
+.castom-border div {
+    border-bottom: 1px solid #eaeaea;
+    flex: 1;
+}
+
+div.accent {
+    border-bottom: 3px solid #f16d7f;
+}
+
+.select_custom {
+    
+}
+
+
