@@ -1345,3 +1345,23 @@ align-items: center;
     padding-top: 20px;
     padding-left: 20px;
 }
+
+.shipping_addres_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shipping_addres_box_left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  justify-content: center;
+}
+
+.shipping_addres_box_right {
+       display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
