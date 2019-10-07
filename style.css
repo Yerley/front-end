@@ -1346,22 +1346,322 @@ align-items: center;
     padding-left: 20px;
 }
 
-.shipping_addres_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 .shipping_addres_box_left {
     display: flex;
     flex: 1;
-    align-items: center;
   justify-content: center;
+    flex-direction: column;
+    padding-left: 35px;
 }
 
 .shipping_addres_box_right {
        display: flex;
     flex: 1;
-    align-items: center;
     justify-content: center;
+        flex-direction: column;
+}
+
+.shipping_addres_box_small {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.option-input {
+-webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 21.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.option-input:hover {
+  background: #9faab7;
+}
+
+.option-input:checked {
+  background: #222222;
+}
+
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #222222;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+details
+{
+    transition: height 1s ease;
+    overflow: hidden;
+}
+
+details:not([open])
+{
+    height: 1.25em;
+}
+
+details[open]
+{
+    height: 30em;
+}
+
+
+
+.shipping_adress_text {
+      width: 169px;
+  height: 13px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222; 
+    text-transform: uppercase;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+.guest_or_register {
+    padding-top: 39px;
+      width: 201px;
+  height: 11px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222;
+}
+
+.future_register {
+    padding-top: 15px;
+    padding-bottom: 34px;
+  height: 12px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #b3b2b2;
+}
+
+.radio_button_text {
+    text-transform: uppercase;
+  height: 10px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222;
+    padding-left: 30px;
+    padding-bottom: 33px;
+}
+
+.register_and_save_text {
+  height: 10px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222;
+    text-transform: uppercase;
+}
+
+.checkout_text {
+  height: 12px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #b3b2b2;
+}
+
+.continue_button {
+    margin-top: 38px;
+    margin-right: 32px;
+      width: 180px;
+  height: 50px;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+}
+
+.continue_button_text {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+.continue_button_text:before {
+     position: absolute;
+    content: '';
+    width: 0%; height: 100%;
+    background: #4A90E2;
+    top: 0; left: 50%;
+    z-index: -1;
+    transition: all 0ms ease;
+}
+
+.continue_button_text:hover {
+    color: #f16d7f; 
+}
+
+.continue_button_text:hover :before {
+     position: absolute;
+      content: '';
+      width: 100%; height: 100%;
+      background: #4A90E2;
+      top: 0; left: 0%;
+      z-index: -1;
+      transition: all 300ms ease;
+}
+
+.shipping_addres_box {
+    margin-top: 89px;
+   border-bottom: 1px solid #b3b2b23d;
+}
+
+.email_text {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #222222;
+    margin-bottom: 16px;
+}
+
+.input_email {
+      width: 390px;
+  height: 45px;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.required_fields {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #ff0d0d;
+}
+
+.password_link {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #222222; 
+    padding-top: 55px;
+  transition: width .3s ease-in-out;
+    cursor: pointer;
+}
+
+.password_link:after {
+       background-color: #f16d7f;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.password_link:hover:after,
+.password_link:focus:after{
+     width: 100%;
+}
+
+.password_container {
+    display: flex;
 }
